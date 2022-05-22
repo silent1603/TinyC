@@ -65,17 +65,21 @@ static_assert(sizeof(f64) == 8,"Expected u8 to be 8 bytes");
 #endif
 
 #ifndef TEXPORT
+
 #ifdef _MSC_VER
 #define TAPI __declspec(dllexport)
 #else
 #define TAPI __attribute__((visibility("default")))
 #endif
+
 #else
+
 #ifdef _MSC_VER
-#define KAPI __declspec(dllimport)
+#define TAPI __declspec(dllimport)
 #else
-#define KAPI
+#define TAPI
 #endif
+
 #endif
 
 #endif
