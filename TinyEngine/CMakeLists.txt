@@ -17,7 +17,7 @@ add_library(TinyEngine SHARED ${TINY_ENGINE_PROJECT_HEADERS} ${TINY_ENGINE_PROJE
 
 set_property(TARGET TinyEngine PROPERTY CXX_STANDARD 11)
 
-target_include_directories(TinyEngine PRIVATE ${STB_INCLUDE_DIRS} PRIVATE ${TINY_ENGINE_SRC_PATH}/TinyEngine ) 
+target_include_directories(TinyEngine PRIVATE ${STB_INCLUDE_DIRS} PRIVATE ${TINY_ENGINE_SRC_PATH} ) 
 target_link_libraries(TinyEngine PRIVATE SDL2::SDL2 SDL2::SDL2main 
                                         PRIVATE asio asio::asio 
                                         PRIVATE Catch2::Catch2 

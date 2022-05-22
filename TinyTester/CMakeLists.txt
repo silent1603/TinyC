@@ -19,7 +19,7 @@ add_executable(TinyTester ${TINY_TESTER_PROJECT_HEADERS} ${TINY_TESTER_PROJECT_S
 
 set_property(TARGET TinyTester PROPERTY CXX_STANDARD 11)
 
-target_include_directories(TinyTester PRIVATE ${STB_INCLUDE_DIRS} PRIVATE ${TINY_TESTER_SRC_PATH}/TinyTester ) 
+target_include_directories(TinyTester PRIVATE ${STB_INCLUDE_DIRS} PRIVATE ${TINY_TESTER_SRC_PATH} ) 
 target_link_libraries(TinyTester PRIVATE SDL2::SDL2 SDL2::SDL2main 
                                         PRIVATE asio asio::asio 
                                         PRIVATE Catch2::Catch2 
