@@ -1,4 +1,4 @@
-# TinyMusic
+# TinyC
 
 download vulkan sdk https://vulkan.lunarg.com/sdk/home
 
