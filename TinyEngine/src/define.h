@@ -64,7 +64,7 @@ static_assert(sizeof(f64) == 8,"Expected u8 to be 8 bytes");
 #error "Unknown platform"
 #endif
 
-#ifndef TEXPORT
+#ifdef TEXPORT
 
 #ifdef _MSC_VER
 #define TAPI __declspec(dllexport)
