@@ -30,7 +30,7 @@ add_subdirectory(TinyEngine)
 add_subdirectory(TinyTester)
 
 target_include_directories(TinyTester PRIVATE ${CMAKE_SOURCE_DIR}/TinyEngine/src)
-MESSAGE(STATUS ${TINY_C_RELEASE_PATH})
+
 if (MSVC)
   set_target_properties(TinyTester PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY ${TINY_C_RELEASE_PATH})
 endif()
