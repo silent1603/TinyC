@@ -25,7 +25,6 @@ find_package(OpenAL CONFIG REQUIRED)
 find_package(EASTL CONFIG REQUIRED)
 find_path(STB_INCLUDE_DIRS "stb.h")
 
-
 add_subdirectory(TinyEngine)
 add_subdirectory(TinyTester)
 
